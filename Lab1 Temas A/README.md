@@ -63,14 +63,22 @@ Fin del programa
 1. Hay varios aspecto a considerar en la solución de este problema. En primer lugar, se declara una variable adicional a la posición: la **orientación** que se denota como _ang_. Esta también se inicializa a 0. La explicación del por qué el inicial es 0 se explicará más adelante.  
 El procedimiento a realizar se refleja en este diagrama de flujo:
 
-![Diagrama de Flujo](files/flowdiagram.jpg)
+<div align="center">
+  
+<img src="files/flowdiagram.jpg" alt="Descripción de la imagen" width="350">
+
+</div>
 
 Se analiza cada acciones de la lista, dependiendo de si es movimiento o rotación actualiza desplazamientos u orientación, y se repite hasta acabar con todas las acciones, donde imprime el resultado.
 
 
 Otro aspecto a analizar es la relación de orientación con desplazamiento. Cada una de las orientaciones fue analizada como un ángulo (adelante: 0°, atrás: 180°, izquierda: 90°, derecha 270°), como se observa en la figura.
 
-![Eje Cartesiano](files/eje_cartesiano.jpg)
+<div align="center">
+  
+<img src="files/eje_cartesiano.jpg" alt="Descripción de la imagen" width="350">
+
+</div>
 
 La importancia de los ángulos es que simplifica de una manera eficaz la transformación a desplazamientos. Como podemos ver en la Tabla 1, si un carro desea avanzar estando en la posición _adelante_, su coordenada x se mantendrá, mientras que y aumentará una unidad. Este desplazamiento (0,1) es **el mismo** que si aplicamos (sin(90), cos(90)). Y esta relación cumple con todas las otras combinaciones. Por otro lado, para la acción de retroceder, solo hay que negar los datos.
 
@@ -181,7 +189,7 @@ Cuando son diferentes, y para no variar el flujo de trabajo para un analista de 
 
 ```
 
-#Ejercicio 4
+# Ejercicio 4
 
 ### Comandos utilizados en el programa
 
